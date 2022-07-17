@@ -1,0 +1,19 @@
+<form [formGroup]="loginForm" fxLayout="column" fxFlexFill fxLayoutAlign="center center">
+
+  <mat-form-field>
+    <mat-label>Login</mat-label>
+    <input matInput type="text" formControlName="login">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Password</mat-label>
+    <input matInput type="password" formControlName="password">
+  </mat-form-field>
+
+<button mat-button color="primary" [disabled]="!loginForm.valid" (click)="tryLogin()">Login</button>
+<button mat-button color="primary" (click)="registerButton()">Register</button>
+
+</form>
+
+
+

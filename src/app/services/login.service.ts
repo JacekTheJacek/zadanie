@@ -24,10 +24,10 @@ export class LoginService {
           this.userService.setUserData(userData)
           this.router.navigateByUrl('/user')
         } else {
-          this.infoSnackbarService.openSnackBar('inorrect login or password');
+          this.infoSnackbarService.openSnackBar('incorrect login or password');
         }
       } else {
-        this.infoSnackbarService.openSnackBar('inorrect login or password');
+        this.infoSnackbarService.openSnackBar('incorrect login or password');
       }
     })
   }

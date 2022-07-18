@@ -19,7 +19,7 @@ export class RegisterService {
         this.router.navigateByUrl('');
       });
     } catch (err) {
-      this.infoSnackbarService.openSnackBar('incorrec register data');
+      this.infoSnackbarService.openSnackBar('incorrect register data');
     }
   }
 
